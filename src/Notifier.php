@@ -25,7 +25,7 @@ class Notifier extends AirbrakeNotifier
             if (isset($user->id)) {
                 $notice['context']['user']['id'] = $user->id;
             }
-            if (isset($user->identity)) {
+            if (isset($user->identity) && isset($this->user)) {
                 $notice['context']['user'] = $this->user->call($this, $user->identity);
             }
         }
