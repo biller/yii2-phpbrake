@@ -50,7 +50,7 @@ class AirbrakeTarget extends Target
             // add additional information available from logger
             $airbrakeNotice['context']['severity'] = Logger::getLevelName($level);
             $airbrakeNotice['context']['category'] = $category;
-            $airbrakeNotice['context']['timestamp'] = date('Y-m-d H:i:s', $timestamp);
+            $airbrakeNotice['context']['timestamp'] = date('Y-m-d H:i:s', intval($timestamp));
 
             if ($airbrakeNotice !== null) {
                 $this->airbrakeService->sendNotice($airbrakeNotice);
