@@ -9,6 +9,11 @@ class Notifier extends AirbrakeNotifier
 {
     private $user;
 
+    /**
+     * @var array
+     */
+    private $errorConfig;
+
     public function __construct($opt)
     {
         parent::__construct($opt);
