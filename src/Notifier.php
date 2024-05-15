@@ -12,7 +12,7 @@ class Notifier extends AirbrakeNotifier
     /**
      * @var array
      */
-    private $errorConfig;
+    protected $errorConfig;
 
     public function __construct($opt)
     {
