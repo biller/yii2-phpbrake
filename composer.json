@@ -20,7 +20,7 @@
   "require": {
     "php": "^7.0 || ^8.0",
     "yiisoft/yii2": "^2.0",
-    "airbrake/phpbrake": "^0.8"
+    "airbrake/phpbrake": "^1.0"
   },
   "autoload": {
     "psr-4": {
