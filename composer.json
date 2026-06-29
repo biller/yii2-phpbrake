@@ -16,7 +16,6 @@
     "issues": "https://github.com/biller/yii2-phpbrake/issues",
     "source": "https://github.com/biller/yii2-phpbrake"
   },
-  "minimum-stability": "stable",
   "require": {
     "php": "^8.2",
     "airbrake/phpbrake": "^1.0",
